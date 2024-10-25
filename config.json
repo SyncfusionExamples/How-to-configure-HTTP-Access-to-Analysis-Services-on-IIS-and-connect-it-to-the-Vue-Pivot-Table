@@ -1,6 +1,6 @@
 {
     "components": [
-        "TypeScript"
+        "Vite"
     ],
     "type": "SampleBrowser",
     "productOwner": "Piramanayagam R",
