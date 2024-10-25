@@ -14,12 +14,12 @@ export default {
   data () {
     return {
       dataSourceSettings: {
-            catalog: 'AdventureWorksDW2014Multidimensional-SE',
-            cube: 'Adventure Works',
-            providerType: 'SSAS',
-            enableSorting: true,
-            url: 'http://localhost:80/OLAP/msmdpump.dll',
-            localeIdentifier: 1033,
+        catalog: 'AdventureWorksDW2014Multidimensional-SE',
+        cube: 'Adventure Works',
+        providerType: 'SSAS',
+        enableSorting: true,
+        url: 'http://localhost:80/OLAP/msmdpump.dll',
+        localeIdentifier: 1033,
             rows: [
                 { name: '[Customer].[Customer Geography]', caption: 'Customer Geography' },
             ],
