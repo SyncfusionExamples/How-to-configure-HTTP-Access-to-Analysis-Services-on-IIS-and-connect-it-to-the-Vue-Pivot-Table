@@ -1,17 +1,16 @@
 <template>
-  <div id="app">
-    <ejs-pivotview :dataSourceSettings="dataSourceSettings" :height= "height"> </ejs-pivotview>
-  </div>
+    <div id="app">
+        <ejs-pivotview :dataSourceSettings="dataSourceSettings" :height= "height"> </ejs-pivotview>
+    </div>
 </template>
 
 <script>
-import Vue from "vue";
-import { PivotViewPlugin } from '@syncfusion/ej2-vue-pivotview';
-
-Vue.use(PivotViewPlugin);
+import { PivotViewComponent } from "@syncfusion/ej2-vue-pivotview";
 
 export default {
-  name: 'app',
+  components: {
+    'ejs-pivotview': PivotViewComponent
+  },
   data () {
     return {
       dataSourceSettings: {
@@ -32,22 +31,20 @@ export default {
                 { name: '[Measures].[Customer Count]', caption: 'Customer Count' },
                 { name: '[Measures].[Internet Sales Amount]', caption: 'Internet Sales Amount' }
             ],
-      },
-      height: 350
+        },
+        height: 350
     }
   }
 }
 </script>
-
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
-@import "../node_modules/@syncfusion/ej2-pivotview/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+  @import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+  @import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+  @import "../node_modules/@syncfusion/ej2-dropdowns/styles/material.css";
+  @import "../node_modules/@syncfusion/ej2-lists/styles/material.css";
+  @import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+  @import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+  @import "../node_modules/@syncfusion/ej2-grids/styles/material.css";
+  @import "../node_modules/@syncfusion/ej2-vue-pivotview/styles/material.css";
 </style>
